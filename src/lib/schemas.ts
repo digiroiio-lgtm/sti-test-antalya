@@ -96,3 +96,59 @@ export function websiteSchema() {
     },
   };
 }
+
+export function productSchema(opts: {
+  name: string;
+  description: string;
+  url: string;
+  priceGBP: number | string;
+  availability?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    brand: {
+      "@type": "Organization",
+      name: siteConfig.name,
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "GBP",
+      price: opts.priceGBP,
+      availability: opts.availability ?? "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: siteConfig.name,
+      },
+      url: opts.url,
+    },
+  };
+}
+
+export function medicalTestSchema(opts: {
+  name: string;
+  description: string;
+  url: string;
+  usedToDiagnose?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalTest",
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    usedToDiagnose: opts.usedToDiagnose,
+    performer: {
+      "@type": "MedicalClinic",
+      name: siteConfig.name,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Antalya",
+        addressCountry: "TR",
+      },
+    },
+  };
+}
