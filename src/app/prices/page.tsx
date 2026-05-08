@@ -209,7 +209,7 @@ export default function PricesPage() {
               </table>
             </div>
             <p className="text-xs text-gray-500 mt-3">
-              * UK prices are approximate market estimates for private clinics. Actual prices may vary.
+              * UK prices are approximate market estimates for private clinics. Actual prices may vary. Antalya prices are our current standard rates in GBP equivalent — contact us for the latest quote, as exchange rates may affect GBP equivalents.
             </p>
           </div>
         </section>

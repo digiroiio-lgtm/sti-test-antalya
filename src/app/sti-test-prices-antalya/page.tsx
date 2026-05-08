@@ -7,7 +7,7 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "STI Test Prices Antalya Turkey | Full Cost Guide 2024",
+  title: "STI Test Prices Antalya Turkey | Full Cost Guide",
   description:
     "Complete STI testing cost guide for Antalya, Turkey. HIV from £240, HPV from £300, Androflor £360. Compare prices and understand what is included.",
   alternates: { canonical: `${siteConfig.url}/sti-test-prices-antalya` },
