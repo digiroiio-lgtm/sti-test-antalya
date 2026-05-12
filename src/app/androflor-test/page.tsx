@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
-import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import { breadcrumbSchema, faqSchema, medicalTestSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
   title: "Androflor Test Antalya | Male Urogenital Microbiome Testing Turkey",
@@ -24,8 +25,18 @@ export default function AndroflorTestPage() {
   return (
     <>
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Androflor Test", url: `${siteConfig.url}/androflor-test` }])} />
+      <SchemaOrg schema={medicalTestSchema({
+        name: "Androflor Advanced Male Urogenital Microbiome Analysis",
+        description: "Comprehensive PCR-based male urogenital microbiome analysis detecting 30+ pathogens including STIs, mycoplasma, ureaplasma, fungi, and anaerobic bacteria.",
+        url: `${siteConfig.url}/androflor-test`,
+        usedToDiagnose: "Male urogenital infections, STIs, mycoplasma, ureaplasma, candida",
+      })} />
       <SchemaOrg schema={faqSchema(faqs)} />
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Androflor Test", href: "/androflor-test" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Androflor Test in Antalya</h1>

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, articleSchema } from "@/lib/schemas";
 
@@ -17,6 +18,11 @@ export default function STISymptomsInMenPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Blog", url: `${siteConfig.url}/blog` }, { name: "STI Symptoms in Men", url: `${siteConfig.url}/blog/sti-symptoms-in-men` }])} />
       <SchemaOrg schema={articleSchema("STI Symptoms in Men: What to Look For", `${siteConfig.url}/blog/sti-symptoms-in-men`, "2024-12-28", "Guide to STI symptoms in men.")} />
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: "STI Symptoms in Men", href: "/blog/sti-symptoms-in-men" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-16">
           <div className="max-w-3xl mx-auto px-4">
             <div className="text-blue-300 text-sm mb-4">December 28, 2024 · 8 min read</div>

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, articleSchema } from "@/lib/schemas";
 
@@ -17,6 +18,11 @@ export default function WhatIncludedFullSTIPanelPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Blog", url: `${siteConfig.url}/blog` }, { name: "What Is Included in a Full STI Panel?", url: `${siteConfig.url}/blog/what-is-included-in-a-full-sti-panel` }])} />
       <SchemaOrg schema={articleSchema("What Is Included in a Full STI Panel?", `${siteConfig.url}/blog/what-is-included-in-a-full-sti-panel`, "2025-01-05", "Complete guide to full STI panel contents.")} />
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: "What Is Included in a Full STI Panel?", href: "/blog/what-is-included-in-a-full-sti-panel" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-16">
           <div className="max-w-3xl mx-auto px-4">
             <div className="text-blue-300 text-sm mb-4">January 5, 2025 · 7 min read</div>

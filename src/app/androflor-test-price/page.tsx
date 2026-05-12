@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schemas";
 
@@ -66,11 +67,15 @@ export default function AndroflorTestPricePage() {
       />
 
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Prices", href: "/prices" },
+          { name: "Androflor Test Price", href: "/androflor-test-price" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Androflor Test Price in Antalya</h1>
             <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
-              Advanced male urogenital microbiome analysis from <strong>£360</strong>. Detects 30+ pathogens in one PCR test. Includes consultation.
             </p>
             <a
               href={`${siteConfig.whatsapp}?text=${siteConfig.whatsappText}`}

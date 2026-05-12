@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, medicalClinicSchema } from "@/lib/schemas";
 
@@ -38,6 +39,10 @@ export default function STITestAntalyaPage() {
       <SchemaOrg schema={faqSchema(faqs)} />
 
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "STI Testing Antalya", href: "/sti-test-antalya" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">STI Testing in Antalya</h1>

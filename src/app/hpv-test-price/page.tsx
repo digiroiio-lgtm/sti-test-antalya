@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schemas";
 
@@ -70,6 +71,11 @@ export default function HPVTestPricePage() {
       />
 
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Prices", href: "/prices" },
+          { name: "HPV Test Price", href: "/hpv-test-price" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">HPV Test Price in Antalya</h1>

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
@@ -39,6 +40,10 @@ export default function FullSTIPanelPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Full STI Panel", url: `${siteConfig.url}/full-sti-panel` }])} />
       <SchemaOrg schema={faqSchema(faqs)} />
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Full STI Panel", href: "/full-sti-panel" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Full STI Panel in Antalya</h1>

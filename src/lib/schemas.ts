@@ -109,7 +109,8 @@ export function articleSchema(
   title: string,
   url: string,
   datePublished: string,
-  description: string
+  description: string,
+  dateModified?: string
 ) {
   return {
     "@context": "https://schema.org",
@@ -117,7 +118,13 @@ export function articleSchema(
     headline: title,
     url,
     datePublished,
+    dateModified: dateModified ?? datePublished,
     description,
+    author: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,

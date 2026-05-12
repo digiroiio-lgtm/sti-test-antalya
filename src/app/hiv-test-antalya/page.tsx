@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
-import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import { breadcrumbSchema, faqSchema, medicalClinicSchema, medicalTestSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
   title: "HIV Test Antalya | Private Rapid HIV Testing Same Day Results",
@@ -34,9 +35,20 @@ export default function HIVTestAntalyaPage() {
         { name: "Home", url: siteConfig.url },
         { name: "HIV Test Antalya", url: `${siteConfig.url}/hiv-test-antalya` },
       ])} />
+      <SchemaOrg schema={medicalClinicSchema()} />
+      <SchemaOrg schema={medicalTestSchema({
+        name: "HIV Blood Test — 4th Generation",
+        description: "Private HIV blood testing in Antalya using 4th generation combination tests detecting HIV-1/2 antibodies and p24 antigen.",
+        url: `${siteConfig.url}/hiv-test-antalya`,
+        usedToDiagnose: "HIV-1, HIV-2",
+      })} />
       <SchemaOrg schema={faqSchema(faqs)} />
 
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "HIV Test Antalya", href: "/hiv-test-antalya" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">HIV Testing in Antalya</h1>

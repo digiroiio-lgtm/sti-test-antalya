@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, articleSchema } from "@/lib/schemas";
 
@@ -17,6 +18,11 @@ export default function HPVTestingForMenTurkeyPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Blog", url: `${siteConfig.url}/blog` }, { name: "HPV Testing for Men in Turkey", url: `${siteConfig.url}/blog/hpv-testing-for-men-turkey` }])} />
       <SchemaOrg schema={articleSchema("HPV Testing for Men in Turkey", `${siteConfig.url}/blog/hpv-testing-for-men-turkey`, "2024-12-20", "Guide to male HPV testing options in Turkey.")} />
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: "HPV Testing for Men in Turkey", href: "/blog/hpv-testing-for-men-turkey" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-16">
           <div className="max-w-3xl mx-auto px-4">
             <div className="text-blue-300 text-sm mb-4">December 20, 2024 · 6 min read</div>

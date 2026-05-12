@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
-import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import { breadcrumbSchema, faqSchema, medicalClinicSchema, medicalTestSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
   title: "HPV Test Antalya | Private HPV DNA Testing for Men & Women",
@@ -34,9 +35,20 @@ export default function HPVTestAntalyaPage() {
         { name: "Home", url: siteConfig.url },
         { name: "HPV Test Antalya", url: `${siteConfig.url}/hpv-test-antalya` },
       ])} />
+      <SchemaOrg schema={medicalClinicSchema()} />
+      <SchemaOrg schema={medicalTestSchema({
+        name: "HPV DNA Genotyping Test",
+        description: "Private HPV DNA testing in Antalya identifying high-risk and low-risk HPV strains for men and women.",
+        url: `${siteConfig.url}/hpv-test-antalya`,
+        usedToDiagnose: "Human Papillomavirus (HPV)",
+      })} />
       <SchemaOrg schema={faqSchema(faqs)} />
 
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "HPV Test Antalya", href: "/hpv-test-antalya" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">HPV Testing in Antalya</h1>

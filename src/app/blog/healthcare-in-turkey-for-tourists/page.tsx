@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, articleSchema } from "@/lib/schemas";
 
@@ -17,6 +18,11 @@ export default function HealthcareTurkeyTouristsPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Blog", url: `${siteConfig.url}/blog` }, { name: "Healthcare in Turkey for Tourists", url: `${siteConfig.url}/blog/healthcare-in-turkey-for-tourists` }])} />
       <SchemaOrg schema={articleSchema("Healthcare in Turkey for Tourists", `${siteConfig.url}/blog/healthcare-in-turkey-for-tourists`, "2024-12-15", "Guide to private healthcare in Turkey for tourists.")} />
       <main>
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: "Healthcare in Turkey for Tourists", href: "/blog/healthcare-in-turkey-for-tourists" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-16">
           <div className="max-w-3xl mx-auto px-4">
             <div className="text-blue-300 text-sm mb-4">December 15, 2024 · 7 min read</div>
