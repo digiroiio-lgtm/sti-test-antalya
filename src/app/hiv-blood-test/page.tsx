@@ -7,12 +7,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, medicalTestSchema, productSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "HIV Blood Test Antalya | Laboratory HIV Screening Turkey — £240",
+  title: "HIV Blood Test Antalya | Laboratory HIV Screening £240",
   description:
     "HIV blood tests in Antalya from £240. 4th generation laboratory HIV screening. Anonymous, confidential, fast results. English-speaking private clinic.",
   alternates: { canonical: `${siteConfig.url}/hiv-blood-test` },
   openGraph: {
-    title: "HIV Blood Test Antalya | Laboratory HIV Screening Turkey — £240",
+    title: "HIV Blood Test Antalya | Laboratory HIV Screening £240",
     description: "HIV blood testing in Antalya from £240. Comprehensive 4th generation laboratory screening.",
     url: `${siteConfig.url}/hiv-blood-test`,
     siteName: siteConfig.name,

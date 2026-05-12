@@ -7,12 +7,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Rapid HIV Test Antalya | Same-Day Results Private Clinic Turkey",
+  title: "Rapid HIV Test Antalya | Same-Day Results Private Clinic",
   description:
     "Rapid HIV testing in Antalya with results in 20–30 minutes. Point-of-care testing for HIV antibodies. Private, walk-in appointments available.",
   alternates: { canonical: `${siteConfig.url}/rapid-hiv-test-antalya` },
   openGraph: {
-    title: "Rapid HIV Test Antalya | Same-Day Results Private Clinic Turkey",
+    title: "Rapid HIV Test Antalya | Same-Day Results Private Clinic",
     description: "Rapid HIV test results in 20–30 minutes in Antalya. Walk-in available.",
     url: `${siteConfig.url}/rapid-hiv-test-antalya`,
     siteName: siteConfig.name,

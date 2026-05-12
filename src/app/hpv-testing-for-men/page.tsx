@@ -7,12 +7,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "HPV Testing for Men in Antalya Turkey | Private Male HPV Test",
+  title: "HPV Testing for Men Antalya | Private Male HPV Test",
   description:
     "Private HPV testing for men in Antalya. Urethral swab, genital, and anal HPV PCR testing. English-speaking doctors. Confidential results. From £300.",
   alternates: { canonical: `${siteConfig.url}/hpv-testing-for-men` },
   openGraph: {
-    title: "HPV Testing for Men in Antalya Turkey | Private Male HPV Test",
+    title: "HPV Testing for Men Antalya | Private Male HPV Test",
     description: "HPV testing specifically for men in Antalya. Urethral and genital swab options. Private, confidential.",
     url: `${siteConfig.url}/hpv-testing-for-men`,
     siteName: siteConfig.name,

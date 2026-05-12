@@ -11,12 +11,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { faqSchema, organizationSchema, websiteSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "STI Test Antalya | Private Confidential Sexual Health Testing",
+  title: "STI Test Antalya | Private Sexual Health Testing",
   description:
     "Private STI & sexual health testing in Antalya. Same-day results, English-speaking staff, 100% confidential. Book via WhatsApp.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "STI Test Antalya | Private Confidential Sexual Health Testing",
+    title: "STI Test Antalya | Private Sexual Health Testing",
     description:
       "Private STI & sexual health testing in Antalya. Same-day results, English-speaking staff, 100% confidential.",
     url: siteConfig.url,

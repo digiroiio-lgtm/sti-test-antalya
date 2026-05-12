@@ -6,10 +6,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Same Day STI Results Antalya | Rapid Sexual Health Testing Turkey",
+  title: "Same Day STI Results Antalya | Rapid Sexual Health Tests",
   description: "Get your STI test results the same day in Antalya. Rapid HIV, chlamydia, gonorrhea, and full panel tests. English-speaking private clinic.",
   alternates: { canonical: `${siteConfig.url}/same-day-sti-results` },
-  openGraph: { title: "Same Day STI Results Antalya | Rapid Sexual Health Testing Turkey", description: "Get your STI test results the same day in Antalya. Rapid HIV, chlamydia, gonorrhea, and full panel tests. English-speaking private clinic.", url: `${siteConfig.url}/same-day-sti-results`, siteName: siteConfig.name, type: "website" },
+  openGraph: { title: "Same Day STI Results Antalya | Rapid Sexual Health Tests", description: "Get your STI test results the same day in Antalya. Rapid HIV, chlamydia, gonorrhea, and full panel tests. English-speaking private clinic.", url: `${siteConfig.url}/same-day-sti-results`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
 };
 

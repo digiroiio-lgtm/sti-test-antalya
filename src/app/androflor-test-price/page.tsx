@@ -8,12 +8,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Androflor Test Price Antalya | Male Microbiome Test Cost Turkey £360",
+  title: "Androflor Test Price Antalya | Microbiome Test Cost £360",
   description:
     "Androflor advanced male urogenital microbiome test in Antalya £360. Detects 30+ pathogens. PCR-based analysis. Private, confidential. Includes consultation.",
   alternates: { canonical: `${siteConfig.url}/androflor-test-price` },
   openGraph: {
-    title: "Androflor Test Price Antalya | Male Microbiome Test Cost Turkey £360",
+    title: "Androflor Test Price Antalya | Microbiome Test Cost £360",
     description: "Androflor PCR microbiome analysis in Antalya from £360. The most comprehensive male urogenital test available.",
     url: `${siteConfig.url}/androflor-test-price`,
     siteName: siteConfig.name,

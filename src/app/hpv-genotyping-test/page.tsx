@@ -7,12 +7,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, medicalTestSchema, productSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "HPV Genotyping Test Antalya | Identify HPV Strains — From £300",
+  title: "HPV Genotyping Test Antalya | Identify HPV Strains",
   description:
     "HPV genotyping test in Antalya. Identifies specific high-risk and low-risk HPV strains by DNA analysis. Private clinic. From £300. Includes consultation.",
   alternates: { canonical: `${siteConfig.url}/hpv-genotyping-test` },
   openGraph: {
-    title: "HPV Genotyping Test Antalya | Identify HPV Strains — From £300",
+    title: "HPV Genotyping Test Antalya | Identify HPV Strains",
     description: "HPV genotyping identifies exactly which HPV strains are present. Private testing from £300 in Antalya, Turkey.",
     url: `${siteConfig.url}/hpv-genotyping-test`,
     siteName: siteConfig.name,

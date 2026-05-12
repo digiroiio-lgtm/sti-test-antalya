@@ -8,12 +8,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "HIV Test Price Antalya | Private HIV Blood Test Cost Turkey £240",
+  title: "HIV Test Price Antalya | HIV Blood Test Cost Turkey £240",
   description:
     "HIV blood tests in Antalya from £240. Includes laboratory screening, confidential results, and English-speaking support. Private clinic. No referral needed.",
   alternates: { canonical: `${siteConfig.url}/hiv-test-price-antalya` },
   openGraph: {
-    title: "HIV Test Price Antalya | Private HIV Blood Test Cost Turkey £240",
+    title: "HIV Test Price Antalya | HIV Blood Test Cost Turkey £240",
     description: "Private HIV testing in Antalya from £240. Confidential, fast laboratory results.",
     url: `${siteConfig.url}/hiv-test-price-antalya`,
     siteName: siteConfig.name,

@@ -6,10 +6,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Urethral Swab Test Antalya | Private Urethral STI Testing Turkey",
-  description: "Private urethral swab testing in Antalya. Detects gonorrhea, chlamydia, mycoplasma, and other urethral infections. Discreet, confidential, English-speaking clinic.",
+  title: "Urethral Swab Test Antalya | Private STI Testing Turkey",
+  description: "Private urethral swab testing in Antalya. Detects gonorrhea, chlamydia, mycoplasma, and urethral infections. Discreet, confidential clinic.",
   alternates: { canonical: `${siteConfig.url}/urethral-swab-test` },
-  openGraph: { title: "Urethral Swab Test Antalya | Private Urethral STI Testing Turkey", description: "Private urethral swab testing in Antalya. Accurate detection of urethral infections.", url: `${siteConfig.url}/urethral-swab-test`, siteName: siteConfig.name, type: "website" },
+  openGraph: { title: "Urethral Swab Test Antalya | Private STI Testing Turkey", description: "Private urethral swab testing in Antalya. Accurate detection of urethral infections.", url: `${siteConfig.url}/urethral-swab-test`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
 };
 

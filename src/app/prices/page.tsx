@@ -8,12 +8,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "STI Test Prices Antalya | Private Sexual Health Testing Costs Turkey",
+  title: "STI Test Prices Antalya | Sexual Health Test Costs Turkey",
   description:
     "Full STI testing price list in Antalya, Turkey. HPV genotyping from £300, HIV blood tests from £240, Androflor from £360. Transparent pricing, no hidden fees.",
   alternates: { canonical: `${siteConfig.url}/prices` },
   openGraph: {
-    title: "STI Test Prices Antalya | Private Sexual Health Testing Costs Turkey",
+    title: "STI Test Prices Antalya | Sexual Health Test Costs Turkey",
     description:
       "Transparent STI testing prices in Antalya. HPV, HIV, Androflor, and full package costs. Often 50–70% less than UK/EU clinics.",
     url: `${siteConfig.url}/prices`,

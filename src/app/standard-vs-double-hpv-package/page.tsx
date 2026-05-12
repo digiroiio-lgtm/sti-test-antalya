@@ -7,12 +7,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Standard vs Double HPV Package | Which Package Is Right for You?",
+  title: "Standard vs Double HPV Package | Which Is Right for You?",
   description:
     "Compare the Standard STI Package (£900) with the Double HPV Package (£1,200). What each includes, who they are for, and how to choose. Antalya clinic guide.",
   alternates: { canonical: `${siteConfig.url}/standard-vs-double-hpv-package` },
   openGraph: {
-    title: "Standard vs Double HPV Package | Which Package Is Right for You?",
+    title: "Standard vs Double HPV Package | Which Is Right for You?",
     description: "£900 Standard vs £1,200 Double HPV Package compared. Inclusions, best-fit patients, and which to choose.",
     url: `${siteConfig.url}/standard-vs-double-hpv-package`,
     siteName: siteConfig.name,

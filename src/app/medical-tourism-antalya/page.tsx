@@ -6,10 +6,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Medical Tourism Antalya | Private Healthcare for Tourists Turkey",
+  title: "Medical Tourism Antalya | Private Healthcare for Tourists",
   description: "Private medical tourism services in Antalya. STI testing, sexual health screening, and general health checks for tourists. English-speaking clinic.",
   alternates: { canonical: `${siteConfig.url}/medical-tourism-antalya` },
-  openGraph: { title: "Medical Tourism Antalya | Private Healthcare for Tourists Turkey", description: "Private healthcare for tourists in Antalya. STI testing and health screening.", url: `${siteConfig.url}/medical-tourism-antalya`, siteName: siteConfig.name, type: "website" },
+  openGraph: { title: "Medical Tourism Antalya | Private Healthcare for Tourists", description: "Private healthcare for tourists in Antalya. STI testing and health screening.", url: `${siteConfig.url}/medical-tourism-antalya`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
 };
 

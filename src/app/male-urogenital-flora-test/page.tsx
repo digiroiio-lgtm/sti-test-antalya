@@ -7,12 +7,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Male Urogenital Flora Test Antalya | Advanced Microbiome Analysis",
+  title: "Male Urogenital Flora Test Antalya | Microbiome Analysis",
   description:
     "Male urogenital flora testing in Antalya. PCR-based analysis of the male urogenital microbiome. Detects bacterial, fungal, and STI pathogens. Private clinic.",
   alternates: { canonical: `${siteConfig.url}/male-urogenital-flora-test` },
   openGraph: {
-    title: "Male Urogenital Flora Test Antalya | Advanced Microbiome Analysis",
+    title: "Male Urogenital Flora Test Antalya | Microbiome Analysis",
     description: "Comprehensive male urogenital flora testing in Antalya. PCR analysis of 30+ microorganisms.",
     url: `${siteConfig.url}/male-urogenital-flora-test`,
     siteName: siteConfig.name,

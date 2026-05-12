@@ -8,12 +8,12 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "STI Test Packages Antalya | Full Screening Packages from £900",
+  title: "STI Test Packages Antalya | Screening Packages from £900",
   description:
     "Private STI testing packages in Antalya. Standard Package £900 (HPV + HIV + Androflor) or Double HPV Package £1,200. Includes consultations. English-speaking clinic.",
   alternates: { canonical: `${siteConfig.url}/sti-test-packages` },
   openGraph: {
-    title: "STI Test Packages Antalya | Full Screening Packages from £900",
+    title: "STI Test Packages Antalya | Screening Packages from £900",
     description: "STI testing packages from £900. HPV genotyping, HIV blood tests, and Androflor microbiome analysis. Private clinic Antalya.",
     url: `${siteConfig.url}/sti-test-packages`,
     siteName: siteConfig.name,

@@ -7,10 +7,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Full STI Panel Antalya | Complete Sexual Health Screening Turkey",
+  title: "Full STI Panel Antalya | Sexual Health Screening Turkey",
   description: "Comprehensive full STI panel testing in Antalya. Tests for all major STIs including HIV, HPV, chlamydia, gonorrhea, syphilis, herpes, hepatitis B/C.",
   alternates: { canonical: `${siteConfig.url}/full-sti-panel` },
-  openGraph: { title: "Full STI Panel Antalya | Complete Sexual Health Screening Turkey", description: "Comprehensive full STI panel in Antalya. All major infections in one visit.", url: `${siteConfig.url}/full-sti-panel`, siteName: siteConfig.name, type: "website" },
+  openGraph: { title: "Full STI Panel Antalya | Sexual Health Screening Turkey", description: "Comprehensive full STI panel in Antalya. All major infections in one visit.", url: `${siteConfig.url}/full-sti-panel`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
 };
 

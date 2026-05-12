@@ -6,10 +6,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Anonymous STI Testing Antalya | No-Name Confidential Testing Turkey",
+  title: "Anonymous STI Testing Antalya | Confidential Testing",
   description: "Get tested for STIs anonymously in Antalya. No ID required for anonymous testing. Confidential, private clinic. English-speaking staff.",
   alternates: { canonical: `${siteConfig.url}/anonymous-sti-testing` },
-  openGraph: { title: "Anonymous STI Testing Antalya | No-Name Confidential Testing Turkey", description: "Get tested for STIs anonymously in Antalya. No ID required for anonymous testing. Confidential, private clinic. English-speaking staff.", url: `${siteConfig.url}/anonymous-sti-testing`, siteName: siteConfig.name, type: "website" },
+  openGraph: { title: "Anonymous STI Testing Antalya | Confidential Testing", description: "Get tested for STIs anonymously in Antalya. No ID required for anonymous testing. Confidential, private clinic. English-speaking staff.", url: `${siteConfig.url}/anonymous-sti-testing`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
 };
 

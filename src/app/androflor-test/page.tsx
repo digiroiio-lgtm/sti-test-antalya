@@ -7,10 +7,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, medicalTestSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Androflor Test Antalya | Male Urogenital Microbiome Testing Turkey",
+  title: "Androflor Test Antalya | Urogenital Microbiome Testing",
   description: "Androflor microbiome analysis in Antalya. Detects 30+ pathogens in the male urogenital tract. Advanced PCR-based testing. Private, confidential.",
   alternates: { canonical: `${siteConfig.url}/androflor-test` },
-  openGraph: { title: "Androflor Test Antalya | Male Urogenital Microbiome Testing Turkey", description: "Androflor microbiome analysis in Antalya. 30+ pathogens detected.", url: `${siteConfig.url}/androflor-test`, siteName: siteConfig.name, type: "website" },
+  openGraph: { title: "Androflor Test Antalya | Urogenital Microbiome Testing", description: "Androflor microbiome analysis in Antalya. 30+ pathogens detected.", url: `${siteConfig.url}/androflor-test`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
 };
 

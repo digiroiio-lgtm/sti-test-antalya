@@ -6,10 +6,10 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, articleSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Healthcare in Turkey for Tourists | Private Medical Guide 2025",
+  title: "Healthcare in Turkey for Tourists | Medical Guide 2025",
   description: "Complete guide to accessing private healthcare in Turkey as a tourist. Costs, quality, how to book, what to expect. Sexual health and general medicine.",
   alternates: { canonical: `${siteConfig.url}/blog/healthcare-in-turkey-for-tourists` },
-  openGraph: { title: "Healthcare in Turkey for Tourists | Private Medical Guide 2025", description: "How to access private healthcare in Turkey as a tourist.", url: `${siteConfig.url}/blog/healthcare-in-turkey-for-tourists`, siteName: siteConfig.name, type: "article" },
+  openGraph: { title: "Healthcare in Turkey for Tourists | Medical Guide 2025", description: "How to access private healthcare in Turkey as a tourist.", url: `${siteConfig.url}/blog/healthcare-in-turkey-for-tourists`, siteName: siteConfig.name, type: "article" },
 };
 
 export default function HealthcareTurkeyTouristsPage() {

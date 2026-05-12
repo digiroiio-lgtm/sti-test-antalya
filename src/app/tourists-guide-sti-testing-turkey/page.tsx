@@ -6,8 +6,8 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = {
-  title: "Tourist Guide to STI Testing in Turkey | Antalya Sexual Health Clinic",
-  description: "Everything tourists need to know about getting an STI test in Turkey. How to book, what to expect, costs, and results. English-speaking private clinic in Antalya.",
+  title: "Tourist Guide: STI Testing in Turkey | Antalya Clinic",
+  description: "Everything tourists need to know about STI testing in Turkey. How to book, costs, and results. English-speaking private clinic in Antalya.",
   alternates: { canonical: `${siteConfig.url}/tourists-guide-sti-testing-turkey` },
   openGraph: { title: "Tourist Guide to STI Testing in Turkey", description: "Complete guide for tourists getting STI tested in Antalya, Turkey.", url: `${siteConfig.url}/tourists-guide-sti-testing-turkey`, siteName: siteConfig.name, type: "website" },
   twitter: { card: "summary_large_image" },
