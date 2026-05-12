@@ -18,11 +18,20 @@ export const metadata: Metadata = {
     title: "STI Test Antalya | Private Sexual Health Testing",
     description: siteConfig.description,
     url: siteConfig.url,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "STI Test Antalya | Private Sexual Health Testing",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "STI Test Antalya | Private Sexual Health Testing",
     description: siteConfig.description,
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
