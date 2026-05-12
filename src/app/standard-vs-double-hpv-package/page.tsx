@@ -5,6 +5,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Standard vs Double HPV Package | Which Is Right for You?",
@@ -53,6 +54,10 @@ export default function StandardVsDoubleHPVPage() {
       <SchemaOrg schema={faqSchema(faqs)} />
 
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Standard vs Double HPV Package", href: "/standard-vs-double-hpv-package" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Standard Package vs Double HPV Package</h1>

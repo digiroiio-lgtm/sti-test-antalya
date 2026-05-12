@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/config";
 import CTASection from "@/components/ui/CTASection";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Our Doctors | STI Test Antalya Private Sexual Health Clinic",
@@ -17,6 +18,10 @@ export default function OurDoctorsPage() {
     <>
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Our Doctors", url: `${siteConfig.url}/our-doctors` }])} />
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Our Doctors", href: "/our-doctors" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Medical Team</h1>

@@ -4,6 +4,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Same Day STI Results Antalya | Rapid Sexual Health Tests",
@@ -26,6 +27,10 @@ export default function Page() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Same-Day STI Results in Antalya", url: `${siteConfig.url}/same-day-sti-results` }])} />
       <SchemaOrg schema={faqSchema(faqs)} />
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Same Day STI Results Antalya", href: "/same-day-sti-results" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Same-Day STI Results in Antalya</h1>

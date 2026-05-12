@@ -5,6 +5,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, medicalTestSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "HPV PCR Test Antalya | Molecular HPV Testing Turkey",
@@ -65,6 +66,10 @@ export default function HPVPCRTestPage() {
       />
 
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "HPV PCR Test Antalya", href: "/hpv-pcr-test" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">HPV PCR Test in Antalya</h1>

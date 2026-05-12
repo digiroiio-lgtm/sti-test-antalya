@@ -4,6 +4,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Urethral Swab Test Antalya | Private STI Testing Turkey",
@@ -26,6 +27,10 @@ export default function UrethralSwabTestPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Urethral Swab Test", url: `${siteConfig.url}/urethral-swab-test` }])} />
       <SchemaOrg schema={faqSchema(faqs)} />
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Urethral Swab Test Antalya", href: "/urethral-swab-test" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Urethral Swab Testing in Antalya</h1>

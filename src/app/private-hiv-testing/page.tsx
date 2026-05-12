@@ -5,6 +5,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Private HIV Testing Antalya | Confidential HIV Test Turkey",
@@ -57,6 +58,10 @@ export default function PrivateHIVTestingPage() {
       <SchemaOrg schema={faqSchema(faqs)} />
 
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Private HIV Testing Antalya", href: "/private-hiv-testing" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Private HIV Testing in Antalya</h1>

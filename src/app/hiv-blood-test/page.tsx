@@ -5,6 +5,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema, medicalTestSchema, productSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "HIV Blood Test Antalya | Laboratory HIV Screening £240",
@@ -73,6 +74,10 @@ export default function HIVBloodTestPage() {
       />
 
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "HIV Blood Test Antalya", href: "/hiv-blood-test" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">HIV Blood Test in Antalya</h1>

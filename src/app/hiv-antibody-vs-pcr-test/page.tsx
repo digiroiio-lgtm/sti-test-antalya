@@ -5,6 +5,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "HIV Antibody vs HIV PCR Test | Understanding the Difference",
@@ -57,6 +58,10 @@ export default function HIVAntibodyVsPCRPage() {
       <SchemaOrg schema={faqSchema(faqs)} />
 
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "HIV Antibody vs PCR Test", href: "/hiv-antibody-vs-pcr-test" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">HIV Antibody vs HIV PCR Test</h1>

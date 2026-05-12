@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Medical Disclaimer | STI Test Antalya",
@@ -14,6 +15,10 @@ export default function MedicalDisclaimerPage() {
     <>
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Medical Disclaimer", url: `${siteConfig.url}/medical-disclaimer` }])} />
       <main className="py-16 bg-white">
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Medical Disclaimer", href: "/medical-disclaimer" },
+        ]} />
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-[#0A2342] mb-8">Medical Disclaimer</h1>
           <div className="prose prose-gray max-w-none space-y-8 text-gray-600">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | STI Test Antalya",
@@ -14,6 +15,10 @@ export default function PrivacyPolicyPage() {
     <>
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Privacy Policy", url: `${siteConfig.url}/privacy-policy` }])} />
       <main className="py-16 bg-white">
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Privacy Policy", href: "/privacy-policy" },
+        ]} />
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-[#0A2342] mb-8">Privacy Policy</h1>
           <p className="text-gray-500 mb-8">Last updated: January 2025</p>

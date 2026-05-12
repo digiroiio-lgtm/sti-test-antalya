@@ -4,6 +4,7 @@ import CTASection from "@/components/ui/CTASection";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Gonorrhea Test Antalya | Private Gonorrhoea Testing Turkey",
@@ -26,6 +27,10 @@ export default function GonorrheaTestPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Gonorrhea Test", url: `${siteConfig.url}/gonorrhea-test` }])} />
       <SchemaOrg schema={faqSchema(faqs)} />
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Gonorrhea Test Antalya", href: "/gonorrhea-test" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Gonorrhea Testing in Antalya</h1>

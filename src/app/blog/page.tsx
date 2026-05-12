@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/config";
 import BlogCard from "@/components/ui/BlogCard";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Blog | STI Test Antalya — Sexual Health Advice & Guides",
@@ -26,6 +27,10 @@ export default function BlogPage() {
     <>
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Blog", url: `${siteConfig.url}/blog` }])} />
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Blog", href: "/blog" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Sexual Health Blog</h1>

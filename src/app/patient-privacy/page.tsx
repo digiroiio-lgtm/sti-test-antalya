@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Patient Privacy | STI Test Antalya",
@@ -14,6 +15,10 @@ export default function PatientPrivacyPage() {
     <>
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Patient Privacy", url: `${siteConfig.url}/patient-privacy` }])} />
       <main className="py-16 bg-white">
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Patient Privacy", href: "/patient-privacy" },
+        ]} />
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-[#0A2342] mb-8">Patient Privacy Commitment</h1>
           <p className="text-xl text-gray-600 mb-8">Your privacy is the foundation of everything we do. Here is our commitment to you.</p>

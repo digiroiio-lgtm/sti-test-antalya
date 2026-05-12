@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/config";
 import SchemaOrg from "@/components/SchemaOrg";
 import { breadcrumbSchema, medicalClinicSchema } from "@/lib/schemas";
+import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Contact | STI Test Antalya Private Sexual Health Clinic",
@@ -17,6 +18,10 @@ export default function ContactPage() {
       <SchemaOrg schema={breadcrumbSchema([{ name: "Home", url: siteConfig.url }, { name: "Contact", url: `${siteConfig.url}/contact` }])} />
       <SchemaOrg schema={medicalClinicSchema()} />
       <main>
+        <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Contact", href: "/contact" },
+        ]} />
         <section className="bg-[#0A2342] text-white py-20">
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
