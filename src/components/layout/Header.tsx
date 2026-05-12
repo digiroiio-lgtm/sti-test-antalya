@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/sti-test-antalya", label: "Services" },
   { href: "/hiv-test-antalya", label: "HIV Testing" },
   { href: "/hpv-test-antalya", label: "HPV Testing" },
+  { href: "/prices", label: "Prices" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

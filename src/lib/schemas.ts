@@ -1,5 +1,40 @@
 import { siteConfig } from "./config";
 
+const openingHours = [
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "19:00",
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Saturday"],
+    opens: "09:00",
+    closes: "17:00",
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Sunday"],
+    opens: "10:00",
+    closes: "15:00",
+  },
+];
+
+const contactPoint = {
+  "@type": "ContactPoint",
+  telephone: siteConfig.phone,
+  contactType: "customer service",
+  availableLanguage: ["English", "Turkish"],
+  contactOption: "TollFree",
+};
+
+const geo = {
+  "@type": "GeoCoordinates",
+  latitude: 36.8969,
+  longitude: 30.7133,
+};
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -13,6 +48,9 @@ export function organizationSchema() {
       addressLocality: "Antalya",
       addressCountry: "TR",
     },
+    geo,
+    openingHoursSpecification: openingHours,
+    contactPoint,
     description: siteConfig.description,
   };
 }
@@ -24,11 +62,16 @@ export function medicalClinicSchema() {
     name: siteConfig.name,
     url: siteConfig.url,
     telephone: siteConfig.phone,
+    email: siteConfig.email,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Antalya",
       addressCountry: "TR",
     },
+    geo,
+    openingHoursSpecification: openingHours,
+    contactPoint,
+    priceRange: "£240–£1,200",
     medicalSpecialty: "Sexual Health",
     description: siteConfig.description,
   };
